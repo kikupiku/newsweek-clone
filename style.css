@@ -103,3 +103,26 @@ h6 {
 	position: sticky;
 	top: 0;
 }
+
+.newsletter-pic {
+	height: 300px;
+	width: 190px;
+	object-fit: cover !important;
+}
+
+.subscribe-pic {
+	height: 230px;
+	width: 170px;
+}
+
+.red-newsweek-logo {
+	height: 40px;
+}
+
+.share-icon {
+	height: 20px;
+}
+
+.footer-link {
+	display: inline !important;
+}
