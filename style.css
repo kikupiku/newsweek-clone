@@ -30,6 +30,10 @@
 	padding-bottom: 15px;
 }
 
+.btn {
+	border-radius: 0 !important;
+}
+
 .more-than {
 	height: 20px;
 	padding-bottom: 4px;
@@ -88,4 +92,14 @@ h6 {
 
 .n-pic {
 	height: 20px;
+}
+
+.section-title {
+	margin: 0 auto;
+	width: 180px;
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
 }
