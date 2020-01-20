@@ -2,8 +2,14 @@
   GENERAL
   ============================================================ */
 
-	.outside-of-container {
-		background: #f4f5f6;
+	.whole-body {
+		max-width: 1310px;
+		background-color: white;
+		position: relative;
+	}
+
+	body {
+		background-color: #f4f5f6 !important;
 	}
 
 	.roboto {
@@ -223,3 +229,10 @@ h6 {
 .footer-link {
 	display: inline !important;
 }
+
+/* TODO: - justify navbar
+- make footer responsive
+- center section titles
+- tweak title fonts sizes and weights
+- figure out why everything is a little too much to the left
+- figure out max width of body in lg and grey sides */
