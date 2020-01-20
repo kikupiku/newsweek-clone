@@ -2,36 +2,108 @@
   GENERAL
   ============================================================ */
 
+	.outside-of-container {
+		background: #f4f5f6;
+	}
+
 	.roboto {
 		font-family: 'Roboto Condensed', sans-serif;
+	}
+
+	.font22 {
+		font-size: 22px;
+	}
+
+	.lora {
+		font-family: Lora, serif;
+		font-size: 18px;
+		color: black !important;
 	}
 
 /* =============================================================
   NAVBAR
   ============================================================ */
 
-.date {
-	display: flex;
-	align-items: flex-end;
-	padding-bottom: 15px;
-}
-
 .logo {
-  height: 100px;
-  width: 450px;
+	height: 22px;
+	position: absolute;
+	left: 25px;
+	top: 13px;
 }
 
-.sign-in,
-.btn-light {
+.date {
+	display: none;
+}
+
+@media (min-width: 992px) {
+	/* medium + large screens */
+	.top-header {
+		height: 95px !important;
+	}
+
+	.logo {
+		position: relative;
+		top: 18px;
+		height: 65px;
+	}
+
+	.date {
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 15px;
+	}
+
+	.menu {
+		display: none !important;
+	}
+
+	.top-header:after {
+		display: block;
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 95px;
+		border-top: 13px solid #ef4921;
+		border-left: 13px solid transparent;
+		width: 78px;
+		z-index: 100;
+	}
+
+	.navbar {
+		display: inline-block !important;
+		text-align: left;
+		padding-right: 80px;
+		width: 95%;
+	}
+}
+
+@media (min-width: 1200px) {
+	/* only large screens */
+
+}
+
+.sign-in {
 	display: flex;
-	font-size: 20px;
 	justify-content: flex-end;
 	align-items: flex-end;
 	padding-bottom: 15px;
 }
 
+.sign-in .pr-3 {
+	font-size: 18px;
+}
+
+.sign-in .more-than {
+	font-weight: bold !important;
+}
+
 .btn {
 	border-radius: 0 !important;
+}
+
+.sign-in .btn {
+	height: 25px;
+	padding: 1px 8px 5px 12px !important;
 }
 
 .more-than {
@@ -39,12 +111,28 @@
 	padding-bottom: 4px;
 }
 
+.menu {
+	filter: invert(60%) sepia(24%) saturate(781%) hue-rotate(314deg) brightness(112%) contrast(91%);
+}
+
+.top-header {
+	background-color: #ef4921;
+	height: 50px;
+}
+
+.navbar {
+	position: relative;
+	left: 0;
+	right: 100px;
+}
+
+.navigation li {
+	display: inline-block !important;
+}
+
 .nav-element {
-	padding-left: 10px;
-	padding-right: 10px;
 	font-size: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	list-style-type: none;
 }
 
 .nav-element:hover {
@@ -52,6 +140,11 @@
 }
 
 .search {
+	position: relative;
+	font-size: 18px;
+}
+
+.search-icon {
 	height: 18px;
 }
 
@@ -61,6 +154,10 @@ BODY
 
 h6 {
 	font-weight: bold !important;
+}
+
+.card {
+	border: none !important;
 }
 
 .opinion-section {

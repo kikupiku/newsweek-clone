@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="outside-of-container">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -12,34 +13,36 @@
   </head>
 
 
-  <body class="container-fluid">
+
+
+  <body class="container-fluid-xs container-sm container-md container-lg">
     <header>
-      <div class="row bg-danger text-light">
-        <div class="date col text-bottom roboto">Mon, Jan 13, 2020</div>
-        <div class="col-5 text-center">
-          <img class="logo" src="./assets/newsweek.jpeg" alt="Newsweek">
+      <div class="top-header row text-light">
+        <div class="date col-lg-3 text-bottom roboto pb-3 pl-4">Mon, Jan 13, 2020</div>
+        <div class="col-6 text-center">
+          <img class="logo" src="./assets/newsweek-white.png" alt="Newsweek">
         </div>
-        <div class="sign-in col text-right text-middle roboto font-weight-bold">
+        <div class="sign-in col-lg-3 text-right text-middle roboto font-weight-bold">
           <div class="pr-3">SIGN IN </div>
           <div class="btn btn-light text-danger font-weight-bold">SUBSCRIBE &nbsp;&nbsp;<img class="more-than" src="./assets/more-than.svg" alt="&gt;">
           </div>
+          <img src="./assets/menu.svg" alt="" class="menu pl-3 pr-3">
         </div>
       </div>
 
-      <div class="row navbar roboto font-weight-bold border-bottom mb-3">
-        <div class="nav-element border-right">U.S.</div>
-        <div class="nav-element border-right">World</div>
-        <div class="nav-element border-right">Business</div>
-        <div class="nav-element border-right">Tech & Science</div>
-        <div class="nav-element border-right">Culture</div>
-        <div class="nav-element border-right">Newsgeek</div>
-        <div class="nav-element border-right">Sports</div>
-        <div class="nav-element border-right">Health</div>
-        <div class="nav-element border-right">The Debate</div>
-        <div class="nav-element border-right">Vantage</div>
-        <div class="font-weight-light text-secondary">Search
-          <img class="search" src="./assets/search.png" alt=""></div>
-        <div class="red-bit"></div>
+      <div class="row navbar roboto font-weight-bold border-bottom mb-3 d-none d-lg-inline-block text-justify">
+        <div class="nav-element d-inline border-right">U.S.</div>
+        <div class="nav-element d-inline border-right">World</div>
+        <div class="nav-element d-inline border-right">Business</div>
+        <div class="nav-element d-inline border-right">Tech & Science</div>
+        <div class="nav-element d-inline border-right">Culture</div>
+        <div class="nav-element d-inline border-right">Newsgeek</div>
+        <div class="nav-element d-inline border-right">Sports</div>
+        <div class="nav-element d-inline border-right">Health</div>
+        <div class="nav-element d-inline border-right">The Debate</div>
+        <div class="nav-element d-inline border-right">Vantage</div>
+        <div class="search d-inline font-weight-light text-secondary">Search
+          <img class="search-icon" src="./assets/search.png" alt=""></div>
       </div>
     </header>
 
@@ -50,48 +53,49 @@
 
     <main>
       <div class="row">
-        <div class="col-3 border text-secondary">
+        <div class="col-12 col-md-5 col-lg-3 text-secondary order-2 order-md-1">
           <h6 class="roboto">FEATURED STORIES</h6>
-          <div class="card">
+
+          <div class="card mb-3">
             <img src="https://d.newsweek.com/en/full/1559941/australia-fires-iss.webp?w=397&h=265&q=90&f=513deb2859bff83ca97ee7c4cf213ced" alt="" class="card-img-top">
-            <h3 class="card-title">Smoke From Australia Fires Has Now Reached the Stratosphere, NASA Says</h3>
+            <h3 class="card-title roboto text-dark font22 font-weight-bold">Smoke From Australia Fires Has Now Reached the Stratosphere, NASA Says</h3>
             <p class="card-text">Since September last year, hundreds of fires have burned millions of hectares in Australia, leaving at least 28 people dead.</p>
           </div>
 
-          <div class="card">
+          <div class="card mb-3">
             <img src="https://d.newsweek.com/en/full/1560020/iran-protest.webp?w=397&h=265&q=90&f=8421736b41fcaf98dbabd3e18e3f70e8" alt="" class="card-img-top">
-            <h3 class="card-title">What We Know About Iran's Arrests After Downing of Ukrainian Plane</h3>
+            <h3 class="card-title roboto text-dark font22 font-weight-bold">What We Know About Iran's Arrests After Downing of Ukrainian Plane</h3>
             <p class="card-text">"In pursuing the case of the downed plane, justice will be implemented irrespective of any circumstances," Iran's judiciary chief said.</p>
           </div>
 
-          <div class="card">
+          <div class="card mb-3">
             <img src="https://d.newsweek.com/en/full/1559945/apple.webp?w=397&h=265&q=90&f=1f7c8bc05a5a9d26414dc267af045fb6" alt="" class="card-img-top">
-            <h3 class="card-title">Apple Faces New FBI Encryption Battle Linked to Florida Shooter iPhones</h3>
+            <h3 class="card-title roboto text-dark font22 font-weight-bold">Apple Faces New FBI Encryption Battle Linked to Florida Shooter iPhones</h3>
             <p class="card-text">"Today law enforcement has access to more data than ever before in history, so Americans do not have to choose between weakening encryption and solving investigations," Apple said.</p>
           </div>
 
-          <div class="card">
+          <div class="card mb-3">
             <img src="https://d.newsweek.com/en/full/1559519/oscars-2020-nominations.webp?w=397&h=265&q=90&f=957022fc2a834d4bbd0f4b61e01546cb" alt="" class="card-img-top">
-            <h3 class="card-title">Oscar Nominations 2020 Announced: Which Movie Will Win Best Picture?</h3>
+            <h3 class="card-title roboto text-dark font22 font-weight-bold">Oscar Nominations 2020 Announced: Which Movie Will Win Best Picture?</h3>
             <p class="card-text">This year's front-runners include "1917" and "Once Upon a Time...in Hollywood."</p>
           </div>
 
-          <div class="card">
+          <div class="card mb-3">
             <img src="https://d.newsweek.com/en/full/1551968/university-texas-el-paso.webp?w=300&h=200&f=9a4f10350b3cbfb0289bb89ededca132" alt="" class="card-img-top">
-            <h3 class="card-title">Nurses - The Real Medical Heroes of 2020</h3>
+            <h3 class="card-title roboto text-dark font22 font-weight-bold">Nurses - The Real Medical Heroes of 2020</h3>
             <p class="card-text">We’re used to doctors bustling in and out when in hospital, but it’s the reassuring presence and professionalism of the nursing staff that we rely on. What sets the best ones apart?</p>
           </div>
 
           <div class="sticky">
-            <div class="card">
+            <div class="card mb-3">
               <img src="https://d.newsweek.com/en/full/1544373/california-college-arts.webp?w=300&h=200&f=66849f571dc139be8f9025fd6332fc0c" alt="" class="card-img-top">
-              <h3 class="card-title">What Can a Career in Architecture Do For You?</h3>
+              <h3 class="card-title roboto text-dark font22 font-weight-bold">What Can a Career in Architecture Do For You?</h3>
               <p class="card-text">Architects do much more than plan and design houses, factories, office buildings, and other structures. You might be surprised how diverse the career can be. Find out more.</p>
             </div>
 
-            <div class="card">
+            <div class="card mb-3">
               <img src="https://d.newsweek.com/en/full/1551235/kisling-nestico-redick-knr.webp?w=300&h=200&l=50&t=65&f=02d9a014368909819b502ae206f1f3cb" alt="" class="card-img-top">
-              <h3 class="card-title">If You or a Loved One Has Been Injured, Who Can Champion Your Cause?</h3>
+              <h3 class="card-title roboto text-dark font22 font-weight-bold">If You or a Loved One Has Been Injured, Who Can Champion Your Cause?</h3>
               <p class="card-text">Logic dictates that when you need a good personal injury attorney, you’re going to be in a stressful, vulnerable and overwhelming situation. It is vital that you speak to an attorney who can ensure that you are not taken advantage of. We look at some of the leaders in the field.</p>
             </div>
           </div>
@@ -100,8 +104,8 @@
           <!--                        III      III                       -->
 
 
-        <div class="col-6 border text-secondary">
-          <div class="top-story-section card">
+        <div class="col-12 col-md-7 col-lg-6 text-secondary order-1 order-md-2">
+          <div class="top-story-section card mb-3">
             <h6 class="roboto">TOP STORY</h6>
             <img class="card-img-top" src="https://d.newsweek.com/en/full/1560048/cyberattack-iran-us.webp?w=591&h=364&f=46269515c49ccf00a08959fc9e00d257" alt="">
             <h3 class="card-title roboto text-dark font-weight-bold">This Is What an Iranian Cyberattack on the U.S. Would Look Like</h3>
@@ -109,30 +113,30 @@
           </div>
 
 
-          <div class="culture&travel-section">
+          <div class="culture&travel-section mb-3">
             <h6 class="roboto">CULTURE & TRAVEL</h6>
             <div class="container">
               <div class="row">
                 <div class="card col-6">
-                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1557807/sedona-arizona.webp?w=397&h=265&f=813564e0b05cfbb83cf33db258897660" alt="">
-                  <h3 class="card-title">Follow the Stars for These Must-See Celestial Events of 2020</h3>
+                  <img class="card-img-top mb-3" src="https://d.newsweek.com/en/full/1557807/sedona-arizona.webp?w=397&h=265&f=813564e0b05cfbb83cf33db258897660" alt="">
+                  <h3 class="card-title lora">Follow the Stars for These Must-See Celestial Events of 2020</h3>
                   <p class="card-text">From spectacular meteor showers to rare eclipses, these are the best times to plan a stargazing vacation spent under the night sky.</p>
                 </div>
                 <div class="card col-6">
-                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1558578/smoke-australia.webp?w=397&h=265&f=54b7ceb7971297b6aab2bfade4b3a61a" alt="">
-                  <h3 class="card-title">What Travelers Should Know About Australia Wildfires (and How to Help)</h3>
+                  <img class="card-img-top mb-3" src="https://d.newsweek.com/en/full/1558578/smoke-australia.webp?w=397&h=265&f=54b7ceb7971297b6aab2bfade4b3a61a" alt="">
+                  <h3 class="card-title lora">What Travelers Should Know About Australia Wildfires (and How to Help)</h3>
                   <p class="card-text">As devastating wildfires continue to burn across Australia, the priority is on emergency response. But for long-term recovery, tourism will play a vital role.</p>
                 </div>
               </div>
               <div class="row">
                 <div class="card col-6">
-                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1556716/twa-hotel.webp?w=397&h=265&f=7af1ce5444b4a2b638b278b6207aeb3a" alt="">
-                  <h3 class="card-title">Airport Restaurants Worthy of a Layover</h3>
+                  <img class="card-img-top mb-3" src="https://d.newsweek.com/en/full/1556716/twa-hotel.webp?w=397&h=265&f=7af1ce5444b4a2b638b278b6207aeb3a" alt="">
+                  <h3 class="card-title lora">Airport Restaurants Worthy of a Layover</h3>
                   <p class="card-text">We're living in a golden age of airport dining. Enjoy an epicurean feast at the airport before your flight and smugly pass on the chicken or pasta option on board the plane.</p>
                 </div>
                 <div class="card col-6">
-                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1556162/countryside-georgia-country.webp?w=397&h=265&l=0&t=0&f=83d7f181efe4f3dc355511bf02aac3c6" alt="">
-                  <h3 class="card-title">Travel Trends for 2020, According to the Experts</h3>
+                  <img class="card-img-top mb-3" src="https://d.newsweek.com/en/full/1556162/countryside-georgia-country.webp?w=397&h=265&l=0&t=0&f=83d7f181efe4f3dc355511bf02aac3c6" alt="">
+                  <h3 class="card-title lora">Travel Trends for 2020, According to the Experts</h3>
                   <p class="card-text">How will the trends of the last year and decade evolve and shape the way we travel in 2020 and beyond? We talked to a few experts to find out.</p>
                 </div>
               </div>
@@ -228,11 +232,11 @@
         <!--                     III      III      III                     -->
 
 
-        <div class="col-3 border">
+        <div class=" col-md-7 col-md-12 col-lg-3 order-3">
           <div class="opinion-section">
             <h6 class="text-secondary roboto">OPINION</h6>
 
-            <div class="opinion media">
+            <div class="opinion media border-bottom">
               <img src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580" alt="author" class="mr-3">
               <div class="media-body roboto font-weight-bold">
                 <h5 class="opinion-title mt-0 font-weight-bold">What Trump Doesn't Know About American Competitiveness</h5>
@@ -240,7 +244,7 @@
               </div>
             </div>
 
-            <div class="opinion media">
+            <div class="opinion media border-bottom pt-2">
               <img src="https://d.newsweek.com/en/full/1559723/beatrice-maneshi.webp?w=63&h=63&f=c7943d0a1ca538d51f269c509fe544d3" alt="author" class="mr-3">
               <div class="media-body roboto font-weight-bold">
                 <h5 class="opinion-title mt-0 font-weight-bold">Calling Iran a Terrorist Nation Is a Dangerous Justification</h5>
@@ -248,7 +252,7 @@
               </div>
             </div>
 
-            <div class="opinion media">
+            <div class="opinion media border-bottom pt-2">
               <img src="https://d.newsweek.com/en/full/100577/daniel-r-depetris.webp?w=63&h=63&f=557e36e1b094f95cf0416216ba9ecaa7" alt="author" class="mr-3">
               <div class="media-body roboto font-weight-bold">
                 <h5 class="opinion-title mt-0 font-weight-bold">Trump Must Scrap His New Sanctions on Iran and Row Back to Nuclear Deal</h5>
@@ -256,7 +260,7 @@
               </div>
             </div>
 
-            <div class="opinion media">
+            <div class="opinion media border-bottom pt-2">
               <img src="https://d.newsweek.com/en/full/106870/jody-kent-lavy.webp?w=63&h=63&f=8ba0d291d538b46b66cc1ac109a1f00d" alt="author" class="mr-3">
               <div class="media-body roboto font-weight-bold">
                 <h5 class="opinion-title mt-0 font-weight-bold">'Just Mercy' Is Also a Cry for the Guilty</h5>
@@ -264,7 +268,7 @@
               </div>
             </div>
 
-            <div class="opinion media">
+            <div class="opinion media border-bottom pt-2">
               <img src="https://d.newsweek.com/en/full/1506965/charlie-kirk.webp?w=63&h=63&f=dadcbab6cd325ee70d1bfe4df5a01410" alt="author" class="mr-3">
               <div class="media-body roboto font-weight-bold">
                 <h5 class="opinion-title mt-0 font-weight-bold">Trump's MAGA Doctrine Triumphs Over Iran and Foreign Policy Elite</h5>
@@ -272,7 +276,7 @@
               </div>
             </div>
 
-            <div class="opinion media">
+            <div class="opinion media pt-2">
               <img src="https://d.newsweek.com/en/full/109925/albert-wolf.webp?w=63&h=63&f=b32eccbf54cc15399bed69184b1bc7f0" alt="author" class="mr-3">
               <div class="media-body roboto font-weight-bold">
                 <h5 class="opinion-title mt-0 font-weight-bold">Biden Is the Only Candidate Fit to Contest Trump in Foreign Policy Election</h5>
@@ -286,62 +290,62 @@
             <h6 class="text-secondary roboto">LATEST NEWS</h6>
 
             <div class="news media">
-              <img class="news-pic mr-3" src="https://d.newsweek.com/en/full/1560089/houston-astros.webp?w=397&h=265&f=236aff0dbeaa2ef08476e17aec6442f4" alt="">
+              <img class="news-pic mr-3 mb-3" src="https://d.newsweek.com/en/full/1560089/houston-astros.webp?w=397&h=265&f=236aff0dbeaa2ef08476e17aec6442f4" alt="">
               <div class="media-body">
                 <h5 class="news-title media-title roboto text-dark font-weight-bold">Former MLB Player Matt Holliday Weighs in On Astros' Sign-Stealing</h5>
               </div>
             </div>
 
             <div class="news media">
-              <img class="news-pic mr-3" src="https://d.newsweek.com/en/full/1560062/james-bond-billie-eilish.webp?w=397&h=265&f=9f28b6bf7f6de6a020709ef9cb19b67e" alt="">
+              <img class="news-pic mr-3 mb-3" src="https://d.newsweek.com/en/full/1560062/james-bond-billie-eilish.webp?w=397&h=265&f=9f28b6bf7f6de6a020709ef9cb19b67e" alt="">
               <div class="media-body">
                 <h5 class="news-title media-title roboto text-dark font-weight-bold">Billie Eilish Becomes Youngest Artist to Write and Record a Bond Theme Song</h5>
               </div>
             </div>
 
             <div class="news media">
-              <img class="news-pic mr-3" src="https://d.newsweek.com/en/full/1560040/bloomberg.webp?w=397&h=265&f=18802e8526fe3b82857370e27892510c" alt="">
+              <img class="news-pic mr-3 mb-3" src="https://d.newsweek.com/en/full/1560040/bloomberg.webp?w=397&h=265&f=18802e8526fe3b82857370e27892510c" alt="">
               <div class="media-body">
                 <h5 class="news-title media-title roboto text-dark font-weight-bold">Bloomberg Campaign Manager Says Pollsters Agree Donald Trump Will Win Iowa</h5>
               </div>
             </div>
 
             <div class="news media">
-              <img class="news-pic mr-3" src="https://d.newsweek.com/en/full/1560045/secret-service.webp?w=397&h=265&f=0bd875c45e92b2b63a255653db79dae6" alt="">
+              <img class="news-pic mr-3 mb-3" src="https://d.newsweek.com/en/full/1560045/secret-service.webp?w=397&h=265&f=0bd875c45e92b2b63a255653db79dae6" alt="">
               <div class="media-body">
                 <h5 class="news-title media-title roboto text-dark font-weight-bold">Secret Service Now Says Dog Shot by Off-Duty Agent Was 'Unrestrained'</h5>
               </div>
             </div>
 
             <div class="news media">
-              <img class="news-pic mr-3" src="https://d.newsweek.com/en/full/1560038/syria-iran-protest-soleimani-death.webp?w=397&h=265&f=71ea64f89777cfaed5b79fbd972d0649" alt="">
+              <img class="news-pic mr-3 mb-3" src="https://d.newsweek.com/en/full/1560038/syria-iran-protest-soleimani-death.webp?w=397&h=265&f=71ea64f89777cfaed5b79fbd972d0649" alt="">
               <div class="media-body">
                 <h5 class="news-title media-title roboto text-dark font-weight-bold">Syria Joins Iran to Call for U.S. Exit from Middle East after Iraq Vote</h5>
               </div>
             </div>
 
             <div class="news media">
-              <img class="news-pic mr-3" src="https://d.newsweek.com/en/full/1560085/taiwanelex.webp?w=397&h=265&f=314f1456e39ab50a735127675f562219" alt="">
+              <img class="news-pic mr-3 mb-3" src="https://d.newsweek.com/en/full/1560085/taiwanelex.webp?w=397&h=265&f=314f1456e39ab50a735127675f562219" alt="">
               <div class="media-body">
                 <h5 class="news-title media-title roboto text-dark font-weight-bold">At the Taiwan Election, China Has Entered the Global Meddling Game</h5>
               </div>
             </div>
 
             <div class="news media">
-              <img class="news-pic mr-3" src="https://d.newsweek.com/en/full/1560057/australia-fire-smoke.webp?w=397&h=265&f=cb4d589bff00324d4b3e0b8867a46a7c" alt="">
+              <img class="news-pic mr-3 mb-3" src="https://d.newsweek.com/en/full/1560057/australia-fire-smoke.webp?w=397&h=265&f=cb4d589bff00324d4b3e0b8867a46a7c" alt="">
               <div class="media-body">
                 <h5 class="news-title media-title roboto text-dark font-weight-bold">NASA Astronaut Captures Terrifying Images of Australia Fires and Dust Storm</h5>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card mb-3">
             <img class="card-img-top" src="https://d.newsweek.com/en/full/1556483/south-texas-college-law-houston.webp?w=300&h=200&f=6cf241e9b4c2f25789e415a77960a3a5" alt="">
             <h3 class="card-title">Have you thought about a career in law? If so, where should you get qualified?</h3>
             <p class="card-text">The rewards for a career in the legal profession are many and varied, and demand for lawyers is high. So which schools produce the best lawyers?</p>
           </div>
 
-          <div class="border bg-light">
+          <div class="border bg-light mb-3">
             <div class="media p-3">
               <img class="n-pic mt-2 pr-3" src="./assets/newsweek-n.jpeg" alt="N">
               <div class="media-body">
@@ -352,13 +356,13 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card mb-3">
             <img class="card-img-top" src="https://d.newsweek.com/en/full/1551978/media-school-indiana-university.webp?w=300&h=200&f=284ca8406463d676a66520d60fd05009" alt="">
             <h3 class="card-title">Good Journalists Are More Important Than Ever in 2020</h3>
             <p class="card-text">The world desperately needs sharp, incisive and capable journalists to cut through the noise with measured and nuanced takes on today's pressing issues. For these looking to find their voices, an education at a leading journalism school is invaluable.</p>
           </div>
 
-          <div class="card">
+          <div class="card mb-3">
             <img class="card-img-top" src="https://d.newsweek.com/en/full/1544713/jerudong-international-school.webp?w=300&h=200&f=acbfea642f41c0d998fe3d957a84bcce" alt="">
             <h3 class="card-title">Think All International Schools are the Same? Think Again.</h3>
             <p class="card-text">International schools are not created equal and each one possesses a unique blend of qualities and educational specializations. Find out which one is best for your child.</p>
@@ -384,28 +388,28 @@
         </div>
 
         <div class="row">
-          <div class="col-3 card">
+          <div class="col-md-3 card">
             <img src="https://d.newsweek.com/en/full/1556038/january-03-17-2020-cover.webp?w=290&h=387&q=90&f=ed89350cf833518bb61b48cfbb90391d" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="media-title">SEE ALL FEATURES</h3>
             </div>
           </div>
 
-          <div class="col-3 card">
+          <div class="col-md-3 card">
             <img src="https://d.newsweek.com/en/full/1555301/fe-queen-02-1175861265.webp?w=466&h=311&l=52&t=20&q=90&f=b465ad88a227817f5e10c6870b784301" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="media-title">Why Queen Elizabeth Is Quietly Ceding Power to Prince Charles</h3>
             </div>
           </div>
 
-          <div class="col-3 card">
+          <div class="col-md-3 card">
             <img src="https://d.newsweek.com/en/full/1554036/donald-trump.webp?w=466&h=311&q=90&f=0adb959e0da2c23f6ffe3779dea3b59d" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="media-title">Trump's Finances: Will Voters Ever Know The Truth?</h3>
             </div>
           </div>
 
-          <div class="col-3 card">
+          <div class="col-md-3 card">
             <img src="https://d.newsweek.com/en/full/1555283/per-durham-01-banner.webp?w=466&h=311&l=51&t=38&q=90&f=d0c02907def67ab44db9659b57a0d877" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="media-title">What Happens When a Respected Prosecutor Joins Trump World? Ask John Durham</h3>
@@ -415,28 +419,28 @@
 
 
         <div class="row">
-          <div class="col-3">
+          <div class="col-md-3">
             <img src="https://d.newsweek.com/en/full/1555244/per-mathqanda-banner.webp?w=466&h=311&q=90&f=299d38584520b38dbb048bcb17b850e4" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="media-title">Mathematician Kit Yates on Anti Vaxxer Movement and Air Travel Germs</h3>
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-md-3">
             <img src="https://d.newsweek.com/en/full/1555857/cul-map-wellness-morocco.webp?w=466&h=311&q=90&f=fbdb51d8b5a230ed9cfdee635fe19372" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="media-title">Global Wellness Rituals to Try This Year</h3>
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-md-3">
             <img src="https://d.newsweek.com/en/full/1554653/cul-ps-erivo-banner.webp?w=466&h=311&l=48&t=38&q=90&f=4d2f648271497646b6f7dc7999df4b46" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="media-title">Cynthia Erivo On Embodying the Spirit of Harriet Tubman</h3>
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-md-3">
             <img src="https://d.newsweek.com/en/full/1555679/battle-cry.webp?w=480&h=320&l=52&t=48&q=90&f=15fe70f755c1bd14895070e8604d2bb0" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="media-title">BATTLE CREEK</h3>
@@ -453,12 +457,12 @@
         <div class="row">
           <div class="section-title col-12">
             <img class="n-pic" src="./assets/newsweek-n.jpeg" alt="N">
-            <h5 class="roboto font-weight-bold">EDITOR'S PICS</h5>
+            <h5 class="roboto font-weight-bold">EDITOR'S PICK</h5>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-3 card">
+          <div class="col-12 col-md-6 col-lg-3 card">
             <img src="https://d.newsweek.com/en/full/1559915/elizabeth-warren-bernie-sanders-joe-biden-2020.webp?w=397&h=265&l=43&t=42&f=44dc081f38428a943db6a694c780f582" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title">#RefundWarren Trends Amid Elizabeth Warren Dispute With Bernie Sanders</h3>
@@ -466,7 +470,7 @@
             </div>
           </div>
 
-          <div class="col-3 card">
+          <div class="col-12 col-md-6 col-lg-3 card">
             <img src="https://d.newsweek.com/en/full/1560024/machu-picchu-peru-inca-site.webp?w=397&h=265&f=70379b5286260a7d77ddfd9a75b6c8b3" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title">Machu Picchu Tourists Arrested After Allegedly Damaging Sacred Temple</h3>
@@ -474,7 +478,7 @@
             </div>
           </div>
 
-          <div class="col-3 card">
+          <div class="col-12 col-md-6 col-lg-3 card">
             <img src="https://d.newsweek.com/en/full/1559996/ukrainian-plane-iran.webp?w=397&h=265&f=97b83f4eb2441b963ba2a177aac9c15d" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title">Human Rights Group Condemns Iran's Response to Protests Over Plane Crash</h3>
@@ -482,7 +486,7 @@
             </div>
           </div>
 
-          <div class="col-3 card">
+          <div class="col-12 col-md-6 col-lg-3 card">
             <img src="https://d.newsweek.com/en/full/1559768/iran-crash-vigil.webp?w=397&h=265&f=9dd20b17894c4a32c6b260e04b131728" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title">Iran Must Compensate Plane Victims' Families: Canada Immigration Minister</h3>
@@ -493,7 +497,7 @@
 
 
         <div class="row">
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <img src="https://d.newsweek.com/en/full/1559945/apple.webp?w=397&h=265&f=6d7733fe22281043db58060e39293d13" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title">Apple Faces New FBI Encryption Battle Linked to Florida Shooter iPhones</h3>
@@ -501,7 +505,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <img src="https://d.newsweek.com/en/full/1560025/couple-bed-old-stock-getty.webp?w=397&h=265&f=32cc3bab79f05451a1716d833f598f9b" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title">Regular Sex Linked to Menopause Delay—Even If It's Not With Another Person</h3>
@@ -509,7 +513,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <img src="https://d.newsweek.com/en/full/1560030/tardigrade.webp?w=397&h=265&f=8945708ff410cd73fa108dbac6e76eb4" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title">Tardigrades, the World's Toughest Animals, Have an Achilles Heel</h3>
@@ -517,7 +521,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <img src="https://d.newsweek.com/en/full/1559927/man-joint.webp?w=397&h=265&f=d8602691b0d82438239b18ed9cb80b2a" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title">Marijuana May Reduce Anxiety-Causing Connections in the Brain</h3>
@@ -537,21 +541,21 @@
 
 
         <div class="row">
-          <div class="col-4 card">
+          <div class="col-12 col-md-4 card">
             <img src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.webp?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6" alt="" class="card-img-top">
             <div class="card-body">
               <p class="card-title">Active Volcanoes Around the World That Could Erupt at Any Moment</p>
             </div>
           </div>
 
-          <div class="col-4 card">
+          <div class="col-12 col-md-4 card">
             <img src="https://d.newsweek.com/en/full/1547486/lipschutz-living-room-hotel-chelsea.webp?w=397&h=265&f=fb4270bf5fbc2591cc43d24d0377621d" alt="" class="card-img-top">
             <div class="card-body">
               <p class="card-title">Inside the Last Bohemian Apartments of the Storied Hotel Chelsea</p>
             </div>
           </div>
 
-          <div class="col-4 card">
+          <div class="col-12 col-md-4 card">
             <img src="https://d.newsweek.com/en/full/1543106/2018-cup-collection.webp?w=397&h=265&f=e00260b486695409ac860cb50949464c" alt="" class="card-img-top">
             <div class="card-body">
               <p class="card-title">A Look at Every Starbucks Winter Holiday Cup By Year from 1997 to 2019</p>
@@ -561,21 +565,21 @@
 
 
         <div class="row">
-          <div class="col-4 card">
+          <div class="col-12 col-md-4 card">
             <img src="https://d.newsweek.com/en/full/1542741/holiday-cups-starbucks.webp?w=397&h=265&f=cc7b0a58452583ca846051991fe522ce" alt="" class="card-img-top">
             <div class="card-body">
               <p class="card-title">What Starbucks Christmas Holiday Drinks Are Available This Year?</p>
             </div>
           </div>
 
-          <div class="col-4 card">
+          <div class="col-12 col-md-4 card">
             <img src="https://d.newsweek.com/en/full/1539646/first-wives-club-pumpkin.webp?w=397&h=265&f=4a9ecc91f6b122866651645aed974cf6" alt="" class="card-img-top">
             <div class="card-body">
               <p class="card-title">Meet the Master Carver Who Turns Pumpkins Into Portraits</p>
             </div>
           </div>
 
-          <div class="col-4 card">
+          <div class="col-12 col-md-4 card">
             <img src="https://d.newsweek.com/en/full/1534277/nycc-2019-best-cosplay-augustus-st-cloud.webp?w=397&h=265&l=22&t=27&f=db0895c475d903e09b054be0c3cfb8c5" alt="" class="card-img-top">
             <div class="card-body">
               <p class="card-title">Our Cosplay Favorites from NYCC 2019</p>
