@@ -12,18 +12,59 @@
 		background-color: #f4f5f6 !important;
 	}
 
-	.roboto {
-		font-family: 'Roboto Condensed', sans-serif;
+	.font14 {
+		font-size: 14px;
+	}
+
+	.font16 {
+		font-size: 16px;
+	}
+
+	.font17 {
+		font-size: 17px;
+	}
+
+	.font18 {
+		font-size: 18px;
+	}
+
+	.font20 {
+		font-size: 20px;
 	}
 
 	.font22 {
 		font-size: 22px;
 	}
 
+	.font24 {
+		font-size: 24px;
+	}
+
 	.lora {
 		font-family: Lora, serif;
 		font-size: 18px;
 		color: black !important;
+	}
+
+	.roboto {
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+
+	.pointer,
+	img,
+	*[class*="title"] {
+		cursor: pointer;
+	}
+
+	.nav-element:hover,
+	.opinion-title:hover,
+	.h-red:hover {
+		color: red !important;
+	}
+
+	.h-red-underline:hover {
+		text-decoration: underline;
+		text-decoration-color: red;
 	}
 
 /* =============================================================
@@ -75,17 +116,13 @@
 		z-index: 100;
 	}
 
-	.navbar {
-		display: inline-block !important;
-		text-align: left;
-		padding-right: 80px;
-		width: 95%;
+	.nav-container {
+		width: 95% !important;
 	}
-}
 
-@media (min-width: 1200px) {
-	/* only large screens */
-
+	.newsletter-pic {
+		height: 300px !important;
+	}
 }
 
 .sign-in {
@@ -110,6 +147,10 @@
 .sign-in .btn {
 	height: 25px;
 	padding: 1px 8px 5px 12px !important;
+}
+
+.sign-in .btn:hover {
+	background-color: white;
 }
 
 .more-than {
@@ -141,13 +182,13 @@
 	list-style-type: none;
 }
 
-.nav-element:hover {
-	color: red;
-}
-
 .search {
 	position: relative;
 	font-size: 18px;
+}
+
+.search:hover {
+	color: #6c757d !important;
 }
 
 .search-icon {
@@ -164,6 +205,11 @@ h6 {
 
 .card {
 	border: none !important;
+}
+
+.culturetravel-section,
+.culturetravel-section .card {
+	background-color: #f4f5f7;
 }
 
 .opinion-section {
@@ -193,8 +239,23 @@ h6 {
 	font-size: 16px;
 }
 
+.sponsored-right {
+	margin: 0 auto;
+	max-width: 331px !important;
+}
+
+.newsletter {
+	background-color: #f4f5f6;
+	margin: 0 auto !important;
+	width: 300px;
+}
+
 .n-pic {
-	height: 20px;
+	height: 24px;
+}
+
+.btn.sign-up {
+	width: 100px;
 }
 
 .section-title {
@@ -207,10 +268,42 @@ h6 {
 	top: 0;
 }
 
+/* ====================================================================
+AFTER THE 3 COLUMNS
+=================================================================== */
+
+.n-pic[alt="N"] {
+	background-color: red;
+	position: relative;
+	height: 25px !important;
+}
+
+.n-pic[alt="N"]::after {
+  border-bottom: 3px solid red;
+  border-right: 3px solid red;
+  display: block;
+  content: "dupa";
+  width: 26px;
+  height: 25px;
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+}
+
+.big-section {
+	position: relative;
+	top: 4px;
+}
+
 .newsletter-pic {
-	height: 300px;
+	height: 190px;
 	width: 190px;
 	object-fit: cover !important;
+}
+
+.in-depth {
+	background-color: #f4f5f6 !important;
+	height: 300px;
 }
 
 .subscribe-pic {
@@ -218,21 +311,85 @@ h6 {
 	width: 170px;
 }
 
-.red-newsweek-logo {
+.subscribe-button {
 	height: 40px;
+	width: 140px;
+}
+
+.bottom-button-more-than {
+	height: 25px;
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.sign-in-button {
+	height: 40px;
+	width: 115px;
+}
+
+.sign-in-button:hover,
+.subscribe-button:hover {
+	background-color: #de1f0e;
+}
+
+/* ========================================================================
+FOOTER
+======================================================================= */
+
+.container-bottom {
+	width: 95%;
+	margin: 0 auto !important;
+}
+
+.col-9 span {
+	position: relative;
+	font-size: 12px;
+	top: 13px;
+	left: 5px;
+}
+
+.red-newsweek-logo {
+	height: 35px;
 }
 
 .share-icon {
 	height: 20px;
+	filter: invert(42%) sepia(0%) saturate(1%) hue-rotate(47deg) brightness(90%) contrast(87%);
+}
+
+.iconf:hover {
+	filter: invert(29%) sepia(83%) saturate(454%) hue-rotate(182deg) brightness(94%) contrast(87%);
+}
+
+.icontw:hover {
+	filter: invert(58%) sepia(30%) saturate(6333%) hue-rotate(176deg) brightness(98%) contrast(94%);
+}
+
+.iconi:hover {
+	filter: invert(33%) sepia(60%) saturate(3048%) hue-rotate(221deg) brightness(90%) contrast(99%);
+}
+
+.icontu:hover {
+	filter: invert(25%) sepia(10%) saturate(1606%) hue-rotate(174deg) brightness(96%) contrast(90%);
+}
+
+.iconl:hover {
+	filter: invert(24%) sepia(90%) saturate(4857%) hue-rotate(186deg) brightness(98%) contrast(102%);
 }
 
 .footer-link {
 	display: inline !important;
+	line-height: 2 !important;
 }
 
-/* TODO: - justify navbar
+.footer-link:hover {
+	color: black;
+	text-decoration: none;
+}
+
+/* TODO: - justify navbar??????????
 - make footer responsive
 - center section titles
 - tweak title fonts sizes and weights
-- figure out why everything is a little too much to the left
-- figure out max width of body in lg and grey sides */
+- why does newsletter not want to center
+-little divs inside pics
+ */
