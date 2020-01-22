@@ -140,13 +140,22 @@
 }
 
 @media (min-width: 767px) {
+
 	.sponsored-right {
 		margin: 0 auto;
 		max-width: 331px !important;
 	}
 
-	.news-pic {
+	.news-pic,
+	img.additional-topics {
 		width: 135px !important;
+	}
+
+	.newsweek2020 {
+		display: inline-block;
+		position: relative;
+		top: 12px;
+		left: 8px;
 	}
 }
 
@@ -299,8 +308,9 @@ h6 {
 	max-width: 300px;
 }
 
-.news-pic {
-	width: 258px;
+.news-pic,
+.additional-topics {
+	width: 258px !important;
 }
 
 .n-pic {
@@ -457,6 +467,10 @@ FOOTER
 
 .red-newsweek-logo {
 	height: 35px;
+}
+
+.newsweek2020 {
+	font-size: 12px;
 }
 
 .share-icon {
