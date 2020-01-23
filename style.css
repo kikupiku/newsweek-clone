@@ -3,8 +3,8 @@
 ============================================================ */
 
 .whole-body {
-	max-width: 1310px;
 	background-color: white;
+	max-width: 1310px;
 	position: relative;
 }
 
@@ -53,9 +53,9 @@ body {
 }
 
 .lora {
+	color: black !important;
 	font-family: Lora, serif;
 	font-size: 18px;
-	color: black !important;
 }
 
 .roboto {
@@ -88,84 +88,13 @@ img,
 
 .logo {
 	height: 22px;
-	position: absolute;
 	left: 25px;
+	position: absolute;
 	top: 13px;
 }
 
 .date {
 	display: none;
-}
-
-@media (min-width: 992px) {
-	/* medium + large screens */
-	.top-header {
-		height: 95px !important;
-	}
-
-	.logo {
-		position: relative;
-		top: 18px;
-		height: 65px;
-	}
-
-	.date {
-		display: -webkit-box;
-		display: flex;
-		-webkit-box-align: end;
-		        align-items: flex-end;
-		padding-bottom: 15px;
-	}
-
-	.menu {
-		display: none !important;
-	}
-
-	.top-header:after {
-		display: block;
-		content: "";
-		position: absolute;
-		right: 0;
-		top: 95px;
-		border-top: 13px solid #ef4921;
-		border-left: 13px solid transparent;
-		width: 78px;
-		z-index: 100;
-	}
-
-	.nav-container {
-		width: 95% !important;
-	}
-
-	.in-depth {
-		height: 326px !important;
-		-webkit-box-align: center;
-		        align-items: center;
-	}
-
-	.newsletter-pic {
-		height: 326px !important;
-	}
-}
-
-@media (min-width: 767px) {
-
-	.sponsored-right {
-		margin: 0 auto;
-		max-width: 331px !important;
-	}
-
-	img.news-pic,
-	img.additional-topics {
-		width: 135px !important;
-	}
-
-	.newsweek2020 {
-		display: inline-block;
-		position: relative;
-		top: 12px;
-		left: 8px;
-	}
 }
 
 .sign-in {
@@ -215,8 +144,8 @@ img,
 }
 
 .navbar {
-	position: relative;
 	left: 0;
+	position: relative;
 	right: 100px;
 }
 
@@ -260,11 +189,11 @@ h6 {
 
 .category {
 	background-color: rgba(255, 255, 255, 0.8);
-	height: 30px;
-	width: auto;
-	position: absolute;
 	bottom: 0;
+	height: 30px;
 	left: 0;
+	position: absolute;
+	width: auto;
 }
 
 .category a:hover {
@@ -278,10 +207,10 @@ h6 {
 
 .topic,
 .topiclong {
-	display: block;
 	background-color: #c2d4d7 !important;
-	height: 20px;
+	display: block;
 	font-size: 13px;
+	height: 20px;
 }
 
 .topic {
@@ -309,9 +238,9 @@ h6 {
 }
 
 .media-body {
-	width: 100%;
 	float: left;
 	overflow: visible;
+	width: 100%;
 }
 
 .news-title {
@@ -354,8 +283,8 @@ AFTER THE 3 COLUMNS
 
 .n-pic[alt="N"] {
 	background-color: red;
-	position: relative;
 	height: 25px !important;
+	position: relative;
 }
 
 .features {
@@ -368,25 +297,25 @@ AFTER THE 3 COLUMNS
 }
 
 .features h3 {
+	bottom: 10px;
 	display: inline-block;
 	position: relative;
-	bottom: 10px;
 }
 
 .features h3 img {
 	-webkit-filter: invert(0%) sepia(6%) saturate(14%) hue-rotate(202deg) brightness(109%) contrast(101%);
 	        filter: invert(0%) sepia(6%) saturate(14%) hue-rotate(202deg) brightness(109%) contrast(101%);
-	display: inline-block;
-	width: 15px;
-	position: relative;
 	bottom: 3px;
+	display: inline-block;
+	position: relative;
+	width: 15px;
 }
 
 .in-focus {
-	width: auto;
-	position: absolute;
 	bottom: 0;
 	left: 0;
+	position: absolute;
+	width: auto;
 	z-index: 10;
 }
 
@@ -416,22 +345,22 @@ AFTER THE 3 COLUMNS
 }
 
 .slideshow-icon {
-	position: absolute;
 	bottom: 0;
 	left: -16px;
+	position: absolute;
 }
 
 .slideshow-icon img {
-	width: 65px !important;
 	height: 50px !important;
+	width: 65px !important;
 }
 
 .slideshow-icon a {
+	font-family: Arial;
+	font-size: 20px;
 	position: relative;
 	right: 43px;
 	top: 7px;
-	font-family: Arial;
-	font-size: 20px;
 }
 
 .subscribe-pic {
@@ -465,15 +394,15 @@ FOOTER
 ======================================================================= */
 
 .container-bottom {
-	width: 95%;
 	margin: 0 auto !important;
+	width: 95%;
 }
 
 .col-9 span {
-	position: relative;
 	font-size: 12px;
-	top: 13px;
 	left: 5px;
+	position: relative;
+	top: 13px;
 }
 
 .red-newsweek-logo {
@@ -525,6 +454,76 @@ FOOTER
 	text-decoration: none;
 }
 
-/* TODO:
-- n on featured SLIDESHOWS
- */
+/* ======================================================================
+MEDIA QUERIES
+====================================================================== */
+
+@media (min-width: 992px) {
+	.top-header {
+		height: 95px !important;
+	}
+
+	.logo {
+		height: 65px;
+		position: relative;
+		top: 18px;
+	}
+
+	.date {
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-align: end;
+		        align-items: flex-end;
+		padding-bottom: 15px;
+	}
+
+	.menu {
+		display: none !important;
+	}
+
+	.top-header:after {
+		border-left: 13px solid transparent;
+		border-top: 13px solid #ef4921;
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 95px;
+		width: 78px;
+		z-index: 100;
+	}
+
+	.nav-container {
+		width: 95% !important;
+	}
+
+	.in-depth {
+		height: 326px !important;
+		-webkit-box-align: center;
+		        align-items: center;
+	}
+
+	.newsletter-pic {
+		height: 326px !important;
+	}
+}
+
+@media (min-width: 767px) {
+
+	.sponsored-right {
+		margin: 0 auto;
+		max-width: 331px !important;
+	}
+
+	img.news-pic,
+	img.additional-topics {
+		width: 135px !important;
+	}
+
+	.newsweek2020 {
+		display: inline-block;
+		left: 8px;
+		position: relative;
+		top: 12px;
+	}
+}
