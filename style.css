@@ -1,85 +1,85 @@
 /* =============================================================
   GENERAL
-  ============================================================ */
+============================================================ */
 
-	.whole-body {
-		max-width: 1310px;
-		background-color: white;
-		position: relative;
-	}
+.whole-body {
+	max-width: 1310px;
+	background-color: white;
+	position: relative;
+}
 
-	body {
-		background-color: #f4f5f6 !important;
-	}
+body {
+	background-color: #f4f5f6 !important;
+}
 
-	.text-white {
-		color: white !important;
-	}
+.text-white {
+	color: white !important;
+}
 
-	.bg-black {
-		background-color: black !important;
-	}
+.bg-black {
+	background-color: black !important;
+}
 
-	.font14 {
-		font-size: 14px;
-	}
+.font14 {
+	font-size: 14px;
+}
 
-	.font16 {
-		font-size: 16px;
-	}
+.font16 {
+	font-size: 16px;
+}
 
-	.font17 {
-		font-size: 17px;
-	}
+.font17 {
+	font-size: 17px;
+}
 
-	.font18 {
-		font-size: 18px;
-	}
+.font18 {
+	font-size: 18px;
+}
 
-	.font20 {
-		font-size: 20px;
-	}
+.font20 {
+	font-size: 20px;
+}
 
-	.font22 {
-		font-size: 22px;
-	}
+.font22 {
+	font-size: 22px;
+}
 
-	.font24 {
-		font-size: 24px;
-	}
+.font24 {
+	font-size: 24px;
+}
 
-	.font28 {
-		font-size: 28px;
-	}
+.font28 {
+	font-size: 28px;
+}
 
-	.lora {
-		font-family: Lora, serif;
-		font-size: 18px;
-		color: black !important;
-	}
+.lora {
+	font-family: Lora, serif;
+	font-size: 18px;
+	color: black !important;
+}
 
-	.roboto {
-		font-family: 'Roboto Condensed', sans-serif;
-	}
+.roboto {
+	font-family: 'Roboto Condensed', sans-serif;
+}
 
-	.pointer,
-	img,
-	*[class*="title"],
-	.chapter,
-	.chapter-topic {
-		cursor: pointer;
-	}
+.pointer,
+img,
+*[class*="title"],
+.chapter,
+.chapter-topic {
+	cursor: pointer;
+}
 
-	.nav-element:hover,
-	.opinion-title:hover,
-	.h-red:hover {
-		color: red !important;
-	}
+.nav-element:hover,
+.opinion-title:hover,
+.h-red:hover {
+	color: red !important;
+}
 
-	.h-red-underline:hover {
-		text-decoration: underline;
-		text-decoration-color: red;
-	}
+.h-red-underline:hover {
+	text-decoration: underline;
+	text-decoration-color: red;
+}
 
 /* =============================================================
   NAVBAR
@@ -134,8 +134,13 @@
 		width: 95% !important;
 	}
 
+	.in-depth {
+		height: 326px !important;
+		align-items: center;
+	}
+
 	.newsletter-pic {
-		height: 300px !important;
+		height: 326px !important;
 	}
 }
 
@@ -402,7 +407,10 @@ AFTER THE 3 COLUMNS
 
 .in-depth {
 	background-color: #f4f5f6 !important;
-	height: 300px;
+}
+
+.img-wrapper img {
+	margin: 0 auto !important;
 }
 
 .slideshow-icon {
