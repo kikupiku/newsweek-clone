@@ -87,10 +87,10 @@ img,
   ============================================================ */
 
 .logo {
-	height: 22px;
-	left: 25px;
+	height: 18px;
+	left: 5px;
 	position: absolute;
-	top: 13px;
+	top: 15px;
 }
 
 .date {
@@ -464,7 +464,7 @@ MEDIA QUERIES
 	}
 
 	.logo {
-		height: 65px;
+		height: 65px !important;
 		position: relative;
 		top: 18px;
 	}
@@ -509,6 +509,12 @@ MEDIA QUERIES
 }
 
 @media (min-width: 767px) {
+	.logo {
+		height: 22px;
+		left: 25px;
+		position: absolute;
+		top: 13px;
+	}
 
 	.sponsored-right {
 		margin: 0 auto;
