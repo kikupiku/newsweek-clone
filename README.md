@@ -7,3 +7,5 @@ The aim was to learn the Bootstrap framework by building a clone of the [Newswee
 The project is limited to html and css, and does not contain any javascript code.
 
 Live version available **[HERE](https://kikupiku.github.io/newsweek-clone/)**
+
+![gif on the project in action](https://res.cloudinary.com/kikupiku/image/upload/v1597065137/project-gifs/newsweek-clone_revdwd.gif)
