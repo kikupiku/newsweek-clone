@@ -8,4 +8,4 @@ The project is limited to html and css, and does not contain any javascript code
 
 Live version available **[HERE](https://kikupiku.github.io/newsweek-clone/)**
 
-![gif on the project in action](https://res.cloudinary.com/kikupiku/image/upload/v1597065137/project-gifs/newsweek-clone_revdwd.gif)
+![gif on the project in action](https://res.cloudinary.com/kikupiku/image/upload/v1602937860/project-gifs/newsweek-clone_j31am9.gif)
